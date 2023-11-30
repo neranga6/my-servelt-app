@@ -28,6 +28,6 @@ public class TemperatureConverterServlet extends HttpServlet {
         }
 
         // Forward the request to the JSP for displaying the result
-        request.getRequestDispatcher("/temperatureConverter.jsp").forward(request, response);
+        request.getRequestDispatcher("/temperatureC.jsp").forward(request, response);
     }
 }
