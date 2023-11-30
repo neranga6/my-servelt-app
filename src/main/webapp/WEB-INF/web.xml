@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <servlet>
+        <servlet-name>FormSubmitServlet</servlet-name>
+        <servlet-class>com.service.FormSubmitServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FormSubmitServlet</servlet-name>
+        <url-pattern>/submit</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>JsonReaderServlet</servlet-name>
+        <servlet-class>com.controller.JSONReaderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>JsonReaderServlet</servlet-name>
+        <url-pattern>/JsonReaderServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ListItemsServlet</servlet-name>
+        <servlet-class>com.service.ListItemsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListItemsServlet</servlet-name>
+        <url-pattern>/ListItemsServlet</url-pattern>
+    </servlet-mapping>
+      <servlet>
+        <servlet-name>TemperatureConverterServlet</servlet-name>
+        <servlet-class>com.controller.TemperatureConverterServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>TemperatureConverterServlet</servlet-name>
+        <url-pattern>/TemperatureConverterServlet</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>form.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
